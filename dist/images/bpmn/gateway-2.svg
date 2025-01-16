@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>并行</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Apple-TV-4K" transform="translate(-1134.000000, -970.000000)">
+            <g id="并行" transform="translate(1134.360390, 970.360390)">
+                <g id="gateway" transform="translate(63.639610, 63.639610) rotate(45.000000) translate(-63.639610, -63.639610) translate(18.639610, 18.639610)">
+                    <rect id="矩形" fill-opacity="0.25" fill="#CBCBCB" x="0" y="0" width="90" height="90" rx="20"></rect>
+                    <rect id="矩形" fill="#FFFFFF" x="5" y="5" width="80" height="80" rx="20"></rect>
+                </g>
+                <g id="split" transform="translate(42.639610, 42.639610)" stroke="#01B25F" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                    <polyline id="路径" transform="translate(36.471691, 36.166802) rotate(90.000000) translate(-36.471691, -36.166802) " points="30.6384932 30.6404298 42.3048896 30.6404298 42.3048896 41.6931738"></polyline>
+                    <polyline id="路径" transform="translate(36.471201, 5.834661) rotate(90.000000) translate(-36.471201, -5.834661) " points="42.3043996 0.308289191 30.6380032 0.308289191 30.6380032 11.3610331"></polyline>
+                    <path d="M31.497813,31.4983942 L31.497813,13.1518193 C31.5258124,10.7718744 30.5411685,8.48526071 28.765543,6.80296635 L10.5006328,-10.5006328" id="路径" transform="translate(20.999514, 10.498881) rotate(90.000000) translate(-20.999514, -10.498881) "></path>
+                    <line x1="28.3669898" y1="41.6290529" x2="42.3689988" y2="28.3666935" id="路径" transform="translate(35.367994, 34.997873) rotate(90.000000) translate(-35.367994, -34.997873) "></line>
+                </g>
+                <circle id="椭圆形" fill="#01B25F" cx="41.6396103" cy="63.6396103" r="5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

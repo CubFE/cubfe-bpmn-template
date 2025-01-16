@@ -33,6 +33,7 @@ const formKey = ref("")
 const localScope = ref(null)
 const elExtensionElements = ref(null)
 const otherExtensions = ref(null)
+const prefix = ref("prefix")
 watch(() => props.bpmnElement, (newVal) => {
   if (newVal) {
     currentBpmnElement.value = newVal;
@@ -42,8 +43,7 @@ watch(() => props.bpmnElement, (newVal) => {
     // 获取元素扩展属性 或者 创建扩展属性
     elExtensionElements.value =
         newVal.businessObject.get("extensionElements") || window.bpmnInstances.moddle.create("bpmn:ExtensionElements", { values: [] });
-    // 保留剩余扩展元素，便于后面更新该元素对应属性
-    otherExtensions.value = elExtensionElements.value?.values.filter(ex => ex.$type !== `${this.prefix}:FormData`);
+    otherExtensions.value = elExtensionElements.value?.values.filter(ex => ex.$type !== `${prefix.value}:FormData`);
   }
 }, { immediate: true });
 

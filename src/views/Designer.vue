@@ -35,7 +35,7 @@ const save = (xml) => {
     message: t('model-designer.tools.save-tips'),//"Automatic alignment may cause graphic deformation. Do you want to continue?",
     confirmButtonText: t('btn.confirm'),
     cancelButtonText: t('btn.cancel'),
-  }).then((result)=>{
+  }).then((result: any)=>{
     if(result) {
       // confirmSave(dataBody, true)
     }

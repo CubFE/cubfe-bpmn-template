@@ -1,4 +1,4 @@
-export const listForm = (query: any) => {
+export const listForm = () => {
     return {
         "total": 3,
         "rows": [
