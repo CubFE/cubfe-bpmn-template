@@ -1,1 +1,0 @@
-export { default as MultiSelect } from "./TreeSelect.vue";
