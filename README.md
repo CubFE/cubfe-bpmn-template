@@ -75,11 +75,6 @@ http://localhost:3001
 <img src="./public/images/pages/en.png">
 <img src="./public/images/pages/dark.png">
 
-6. 后端【若依FlowablePlus】
-- Gitee：<https://gitee.com/KonBAI-Q/ruoyi-flowable-plus>
-- GitHub：<https://github.com/KonBAI-Q/RuoYi-Flowable-Plus>
-
-
 ## 贡献
 
 欢迎贡献！请 fork 此仓库并提交PR以参与开发。
