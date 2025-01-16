@@ -21,9 +21,9 @@ const menu = useMenu();
         <SidebarMenuItem>
           <SidebarMenuButton size="lg" as-child>
               <a href="/" class="flex items-center w-full">
-                <img src="/images/logos/small-logo.png" class="h-8" alt="bmsoft">
-                <img v-show="mode === 'dark'" src="/images/logos/logo-white@2x.png" class="h-8" alt="bmsoft">
-                <img v-show="mode === 'light'" src="/images/logos/logo-black@2x.png" class="h-8" alt="bmsoft">
+                <img src="images/logos/small-logo.png" class="h-8" alt="bmsoft">
+                <img v-show="mode === 'dark'" src="images/logos/logo-white@2x.png" class="h-8" alt="bmsoft">
+                <img v-show="mode === 'light'" src="images/logos/logo-black@2x.png" class="h-8" alt="bmsoft">
               </a>
           </SidebarMenuButton>
         </SidebarMenuItem>

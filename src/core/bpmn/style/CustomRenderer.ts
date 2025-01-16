@@ -188,13 +188,13 @@ export default class CustomRenderer extends BaseRenderer {
         });
     }
     private createStartEventShape(parentNode: any): SVGElement {
-        const shape = this.createCircleElementShape(parentNode, '/images/bpmn/start-event.svg')
+        const shape = this.createCircleElementShape(parentNode, 'images/bpmn/start-event.svg')
         svgAppend(parentNode, shape);
         return shape;
     }
 
     private createEndEventShape(parentNode: any): SVGElement {
-        const shape = this.createCircleElementShape(parentNode, '/images/bpmn/end-event.svg')
+        const shape = this.createCircleElementShape(parentNode, 'images/bpmn/end-event.svg')
         svgAppend(parentNode, shape);
         return shape;
     }
@@ -246,7 +246,7 @@ export default class CustomRenderer extends BaseRenderer {
         // 检查事件类型和事件定义
         const eventType = element.type; // 获取事件的基本类型
         const eventDefinitions = event.eventDefinitions; // 获取事件定义
-        let customImageUrl = '/images/bpmn/throw.svg'; // 自定义图片路径
+        let customImageUrl = 'images/bpmn/throw.svg'; // 自定义图片路径
         let circle = this.createCircle(false)
 
         // 根据事件类型和定义区分
@@ -255,28 +255,28 @@ export default class CustomRenderer extends BaseRenderer {
             circle = this.createCircle(true)
             // 中间抛出事件：
             if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:MessageEventDefinition')) {
-                customImageUrl = '/images/bpmn/message-throw.svg'; // 消息中间抛出事件
+                customImageUrl = 'images/bpmn/message-throw.svg'; // 消息中间抛出事件
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:EscalationEventDefinition')) {
-                customImageUrl = '/images/bpmn/update-throw.svg'; // 升级中间抛出事件
+                customImageUrl = 'images/bpmn/update-throw.svg'; // 升级中间抛出事件
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:LinkEventDefinition')) {
-                customImageUrl = '/images/bpmn/link-throw.svg'; // 链接中间抛出事件
+                customImageUrl = 'images/bpmn/link-throw.svg'; // 链接中间抛出事件
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:CompensateEventDefinition')) {
-                customImageUrl = '/images/bpmn/compensate-throw.svg'; // 补偿中间抛出事件
+                customImageUrl = 'images/bpmn/compensate-throw.svg'; // 补偿中间抛出事件
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:SignalEventDefinition')) {
-                customImageUrl = '/images/bpmn/signal-throw.svg'; // 信号中间抛出事件
+                customImageUrl = 'images/bpmn/signal-throw.svg'; // 信号中间抛出事件
             }
         } else if (eventType === 'bpmn:IntermediateCatchEvent') {
             // 中间捕获事件
             if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:MessageEventDefinition')) {
-                customImageUrl = '/images/bpmn/message-catch.svg'; // 消息中间捕获
+                customImageUrl = 'images/bpmn/message-catch.svg'; // 消息中间捕获
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:TimerEventDefinition')) {
-                customImageUrl = '/images/bpmn/timer-catch.svg'; // 定时中间捕获
+                customImageUrl = 'images/bpmn/timer-catch.svg'; // 定时中间捕获
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:ConditionalEventDefinition')) {
-                customImageUrl = '/images/bpmn/condition-catch.svg'; // 条件中间捕获
+                customImageUrl = 'images/bpmn/condition-catch.svg'; // 条件中间捕获
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:LinkEventDefinition')) {
-                customImageUrl = '/images/bpmn/link-catch.svg'; // 链接中间捕获
+                customImageUrl = 'images/bpmn/link-catch.svg'; // 链接中间捕获
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:SignalEventDefinition')) {
-                customImageUrl = '/images/bpmn/signal-catch.svg'; // 信号中间捕获
+                customImageUrl = 'images/bpmn/signal-catch.svg'; // 信号中间捕获
             }
         }
         // 创建图片

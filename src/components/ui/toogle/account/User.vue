@@ -42,7 +42,7 @@ const props = defineProps<{
   <DropdownMenu >
     <DropdownMenuTrigger as-child>
       <Avatar :class="cn(props.class)" size="sm" shape="circle" class="bg-primary">
-        <AvatarImage src="/images/avatars/avatar.svg" alt="@radix-vue" />
+        <AvatarImage src="images/avatars/avatar.svg" alt="@radix-vue" />
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
     </DropdownMenuTrigger>
