@@ -15,6 +15,9 @@
 这是一个基于bpmn.js与 flowable 为核心建立的流程设计框架，美化原有的设计面板与属性面板，实现中英双语切换
 此方案为基础版本布局类型框架后续组件以及内容卡片自行补充
 
+## 预览地址
+<a href="https://cubfe.github.io/cubfe-bpmn-template/" target="_blank">https://cubfe.github.io/cubfe-bpmn-template/</a>
+
 ## 技术栈
 
 - **Vue 3**: 用于构建用户界面的渐进式JavaScript框架。
