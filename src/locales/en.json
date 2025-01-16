@@ -1,0 +1,183 @@
+{
+  "app": {
+    "title": "CubFE Flow Designer",
+    "description": "Discover a New Way to Work",
+    "input-placeholder": "Place Enter",
+    "select-placeholder": "Place Select",
+    "language": "Language",
+    "tips": "Tips",
+    "result": "Result List"
+  },
+  "btn": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "reset": "Reset",
+    "create": "Create",
+    "edit": "Edit",
+    "design": "Design",
+    "deploy": "Deploy",
+    "image": "Image",
+    "history": "History",
+    "delete": "Delete",
+    "close": "Close",
+    "bitch": "Bitch",
+    "renew": "ReNew"
+  },
+  "languages": {
+    "english": "English",
+    "chinese": "Chinese"
+  },
+  "route": {
+    "home": "Home",
+    "login": "Auth Login",
+    "workspace": {
+      "title": "Designer Manage",
+      "index": "Dashboard"
+    },
+    "workflow": {
+      "index": "Workflow",
+      "model": "Model List",
+      "model-designer": "Model Designer",
+      "category": "Category Settings",
+      "form": "From Settings",
+      "form-designer": "Form Designer"
+    }
+  },
+  "login": {
+    "input": {
+      "user-placeholder": "Place Enter Your Account",
+      "pass-placeholder": "Place Enter Your Password",
+      "code-placeholder": "Place Enter Captcha"
+    },
+    "button": {
+      "signin": "Sign in",
+      "signup": "Create an account",
+      "forgot": "Forgot"
+    }
+  },
+  "model": {
+    "search": "Search",
+    "category": "Category",
+    "edit-desc": "Please fill in the information, please note that it is mandatory",
+    "info-model-key": "Model Key",
+    "info-model-name": "Model Name",
+    "info-model-category": "Model Category",
+    "info-model-description": "Description",
+    "info-model-version": "Version",
+    "info-model-create-time": "CreateTime",
+    "info-model-create-by": "CreateBy",
+    "info-model-create-op": "Operate",
+    "info-model-save": "Save Model Info",
+    "history": "History Versions",
+    "delete-tips": "Are you sure to delete the selected data item?",
+    "renew-tips": "Are you sure to set this version as the latest?"
+  },
+  "model-designer": {
+    "title": "Model Designer",
+    "default-name": "Process",
+    "tools": {
+      "preview-xml": "XML Code",
+      "preview-svg": "Preview Process Image",
+      "preview-xml-desc": "The following code is the content of the process",
+      "import": "Import",
+      "download": "Download",
+      "download-xml": "Download XML",
+      "download-bpmn": "Download BPMN",
+      "download-svg": "Download SVG",
+      "simulate": "Simulate",
+      "simulate-stop": "Stop",
+      "simulate-start": "Start",
+      "save": "Save",
+      "save-tips": "Do you want to save this model as a new version?"
+    },
+    "canvas": {
+      "v-layout": "Vertical Layout",
+      "h-layout": "Horizontal Layout",
+      "align-left": "Left Align",
+      "align-right": "Right Align",
+      "align-top": "Top Align",
+      "align-bottom": "Bottom Align",
+      "align-center-h": "Horizontal Align Center",
+      "align-center-v": "Vertical Align Center",
+      "zoom-in": "Zoom In",
+      "zoom-out": "Zoom Out",
+      "zoom-reset": "Create GroupReset View and Center",
+      "undo": "Undo",
+      "redo": "Redo",
+      "reset": "Reset",
+      "align-tips": "Hold down the Shift key to select multiple elements for alignment.",
+      "layout-tips": "Automatic alignment may cause graphic deformation. Do you want to continue?"
+    },
+    "components": {
+      "hand": "Active the hand tool",
+      "lasso": "Active the lasso tool",
+      "space": "Active the space tool",
+      "connect": "Active the connect tool",
+      "start-event": "Create StartEvent",
+      "throw-event": "Create ThrowEvent",
+      "end-event": "Create EndEvent",
+      "gateway": "Create Gateway",
+      "user-task": "Create UserTask",
+      "service-task": "Create ServiceTask",
+      "script-task": "Create ScriptTask",
+      "send-task": "Create SendTask",
+      "receive-task": "Create ReceiveTask",
+      "sub-process": "Create SubProcess",
+      "data-object": "Create Data Object",
+      "data-store": "Create Data Store Reference",
+      "participant": "Create Participant",
+      "group": "Create Group"
+    },
+    "panel": {
+      "title": "Model Settings",
+      "base": {
+        "title": "Base",
+        "id": "ID",
+        "id-placeholder": "Place enter process id",
+        "name": "Name",
+        "name-placeholder": "Place enter process name",
+        "version": "Version",
+        "version-placeholder": "Place enter process version",
+        "executable": "Is it executable",
+        "executable-desc": "Set whether the current process can be executed."
+      },
+      "form": {
+        "title": "Form",
+        "select-placeholder": "Place select form",
+        "node-form": "Is it Node from",
+        "node-form-desc": "After being set as a node form, this form only takes effect at this node"
+      },
+      "task": {
+        "title": "Task"
+      },
+      "condition": {
+        "title": "Condition",
+        "path-type": "Path Type",
+        "path-type-normal": "Normal flow path",
+        "path-type-default": "Default flow path",
+        "path-type-condition": "Condition flow path",
+        "condition-type": "Condition Type",
+        "condition-type-expression": "Expression",
+        "condition-type-script": "Script",
+        "script-type": "Script Type",
+        "lang-type-javascript": "JavaScript",
+        "lang-type-groovy": "Groovy",
+        "script-type-inline": "InlineScript",
+        "script-type-external": "ExternalScript",
+        "resource": "Resource"
+      }
+    },
+    "node": {
+      "empty-task": "DefaultTask",
+      "user-task": "UserTask",
+      "service-task": "ServiceTask",
+      "send-task": "SendTask",
+      "receive-task": "ReceiveTask",
+      "script-task": "ScriptTask",
+      "manual-task": "ManualTask",
+      "business-task": "BusinessRuleTask",
+      "sub-process": "SubProcess"
+    }
+  }
+}

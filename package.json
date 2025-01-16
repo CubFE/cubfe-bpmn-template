@@ -1,7 +1,7 @@
 {
   "name": "cubfe-bpmn-template",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,13 +9,53 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.13"
+    "@codemirror/lang-java": "^6.0.1",
+    "@codemirror/lang-javascript": "^6.0.1",
+    "@codemirror/lang-json": "^6.0.1",
+    "@codemirror/lang-xml": "^6.0.1",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@heroicons/vue": "^2.2.0",
+    "@tanstack/vue-table": "^8.20.5",
+    "@vee-validate/i18n": "^4.14.7",
+    "@vee-validate/zod": "^4.14.7",
+    "@vueuse/core": "^12.0.0",
+    "bpmn-auto-layout": "^1.0.0",
+    "bpmn-js": "^18.1.2",
+    "bpmn-js-bpmnlint": "^0.22.3",
+    "bpmn-js-token-simulation": "^0.36.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "codemirror": "^6.0.1",
+    "diagram-js-grid": "^1.1.0",
+    "diagram-js-grid-bg": "^1.1.0",
+    "diagram-js-minimap": "^5.2.0",
+    "embla-carousel-vue": "^8.5.1",
+    "file-saver": "^2.0.5",
+    "lucide-vue-next": "^0.468.0",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.3.0",
+    "radix-vue": "^1.9.11",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "thememirror": "^2.0.1",
+    "vue": "^3.5.13",
+    "vue-c2c": "^0.2.1",
+    "vue-fullscreen": "^2.6.1",
+    "vue-i18n": "^11.0.0-rc.1",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
-    "@vue/tsconfig": "^0.7.0",
-    "typescript": "~5.6.2",
-    "vite": "^6.0.5",
-    "vue-tsc": "^2.2.0"
+    "@intlify/unplugin-vue-i18n": "^6.0.3",
+    "@types/node": "^22.5.5",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "sass": "^1.82.0",
+    "sass-loader": "^14.2.1",
+    "tailwindcss": "^3.4.16",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-remove-console": "^2.2.0",
+    "vue-tsc": "^2.0.6"
   }
 }
