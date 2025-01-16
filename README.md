@@ -66,9 +66,8 @@
     ```
 
 5. 预览
-http://localhost:3001/#/auth/login
+http://localhost:3001
 
-<img src="./public/images/pages/login.png">
 <img src="./public/images/pages/flow.png">
 <img src="./public/images/pages/en.png">
 <img src="./public/images/pages/dark.png">
