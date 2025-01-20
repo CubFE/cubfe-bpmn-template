@@ -147,26 +147,26 @@ export default class CustomRenderer extends BaseRenderer {
         return shape;
     }
     private createStartEventShape(parentNode: any): SVGElement {
-        const shape = this.createCircleElementShape(parentNode, 'images/bpmn/start-event.svg')
+        const shape = this.createCircleElementShape(parentNode, '/cubfe-bpmn-template/images/bpmn/start-event.svg')
         svgAppend(parentNode, shape);
         return shape;
     }
 
     private createEndEventShape(parentNode: any): SVGElement {
-        const shape = this.createCircleElementShape(parentNode, 'images/bpmn/start-event.svg')
+        const shape = this.createCircleElementShape(parentNode, '/cubfe-bpmn-template/images/bpmn/start-event.svg')
         svgAppend(parentNode, shape);
         return shape;
     }
 
 
     private createSingleShape(parentNode: any, type: string): SVGElement {
-        const shape = this.createCircleElementShape(parentNode,  `/images/bpmn/${type}.svg`)
+        const shape = this.createCircleElementShape(parentNode,  `/cubfe-bpmn-template/images/bpmn/${type}.svg`)
         svgAppend(parentNode, shape);
         return shape;
     }
 
     private createGatewayShape(parentNode: any, type: string): SVGElement {
-        const customImageUrl = `/images/bpmn/${type}.svg`;
+        const customImageUrl = `/cubfe-bpmn-template/images/bpmn/${type}.svg`;
         // svgAppend(parentNode, polygon);
         const shape = svgCreate('image', {
             href: customImageUrl,
@@ -207,28 +207,28 @@ export default class CustomRenderer extends BaseRenderer {
             circle = this.createCircle(true)
             // 中间抛出事件：
             if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:MessageEventDefinition')) {
-                customImageUrl = 'images/bpmn/message-throw.svg'; // 消息中间抛出事件
+                customImageUrl = '/cubfe-bpmn-template/images/bpmn/message-throw.svg'; // 消息中间抛出事件
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:EscalationEventDefinition')) {
-                customImageUrl = 'images/bpmn/update-throw.svg'; // 升级中间抛出事件
+                customImageUrl = '/cubfe-bpmn-template/images/bpmn/update-throw.svg'; // 升级中间抛出事件
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:LinkEventDefinition')) {
-                customImageUrl = 'images/bpmn/link-throw.svg'; // 链接中间抛出事件
+                customImageUrl = '/cubfe-bpmn-template/images/bpmn/link-throw.svg'; // 链接中间抛出事件
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:CompensateEventDefinition')) {
-                customImageUrl = 'images/bpmn/compensate-throw.svg'; // 补偿中间抛出事件
+                customImageUrl = '/cubfe-bpmn-template/images/bpmn/compensate-throw.svg'; // 补偿中间抛出事件
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:SignalEventDefinition')) {
-                customImageUrl = 'images/bpmn/signal-throw.svg'; // 信号中间抛出事件
+                customImageUrl = '/cubfe-bpmn-template/images/bpmn/signal-throw.svg'; // 信号中间抛出事件
             }
         } else if (eventType === 'bpmn:IntermediateCatchEvent') {
             // 中间捕获事件
             if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:MessageEventDefinition')) {
-                customImageUrl = 'images/bpmn/message-catch.svg'; // 消息中间捕获
+                customImageUrl = '/cubfe-bpmn-template/images/bpmn/message-catch.svg'; // 消息中间捕获
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:TimerEventDefinition')) {
-                customImageUrl = 'images/bpmn/timer-catch.svg'; // 定时中间捕获
+                customImageUrl = '/cubfe-bpmn-template/images/bpmn/timer-catch.svg'; // 定时中间捕获
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:ConditionalEventDefinition')) {
-                customImageUrl = 'images/bpmn/condition-catch.svg'; // 条件中间捕获
+                customImageUrl = '/cubfe-bpmn-template/images/bpmn/condition-catch.svg'; // 条件中间捕获
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:LinkEventDefinition')) {
-                customImageUrl = 'images/bpmn/link-catch.svg'; // 链接中间捕获
+                customImageUrl = '/cubfe-bpmn-template/images/bpmn/link-catch.svg'; // 链接中间捕获
             } else if (eventDefinitions?.some((def: any) => def.$type === 'bpmn:SignalEventDefinition')) {
-                customImageUrl = 'images/bpmn/signal-catch.svg'; // 信号中间捕获
+                customImageUrl = '/cubfe-bpmn-template/images/bpmn/signal-catch.svg'; // 信号中间捕获
             }
         }
         // 创建图片
@@ -251,9 +251,9 @@ export default class CustomRenderer extends BaseRenderer {
         rightImageUrl: string;
     } {
         return {
-            leftImageUrl: `/images/bpmn/${type}-icon.svg`,
-            middleImageUrl: `/images/bpmn/middle-rep.svg`,
-            rightImageUrl: `/images/bpmn/task-right.svg`
+            leftImageUrl: `/cubfe-bpmn-template/images/bpmn/${type}-icon.svg`,
+            middleImageUrl: `/cubfe-bpmn-template/images/bpmn/middle-rep.svg`,
+            rightImageUrl: `/cubfe-bpmn-template/images/bpmn/task-right.svg`
         }
     }
     private calcWidth(textContent) {

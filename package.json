@@ -3,8 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "main": "./desktop/main.ts",
   "scripts": {
     "dev": "vite",
+    "electron": "electron desktop/.",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -49,6 +51,7 @@
     "@types/node": "^22.5.5",
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.20",
+    "electron": "^34.0.0",
     "postcss": "^8.4.49",
     "sass": "^1.82.0",
     "sass-loader": "^14.2.1",
